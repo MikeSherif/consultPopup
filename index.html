@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="get-consult-button">Получить<br>консультацию</button>
+<div class="popup-overlay"></div>
+<div class="need-consult-popup">
+    <button class="popup__button__close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(214, 214, 214)" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+        </svg>
+    </button>
+    <div class="popup__content">
+        <h2 class="popup__title">Получить консультацию</h2>
+        <p class="popup__description">Наш менеджер свяжется с вами в ближайшее время и ответит на все вопросы</p>
+        <form class="popup__form" action="#" method="POST">
+            <div class="popup__field">
+                <label class="popup__input__label">Имя</label>
+                <input
+                        type="text"
+                        name="name"
+                        placeholder="Введите ваше имя"
+                        required
+                        class="popup__input">
+            </div>
+            <div class="popup__field">
+                <label class="popup__input__label">Телефон</label>
+                <input
+                        type="tel"
+                        name="phone"
+                        placeholder="+7 999 999 99-99"
+                        required
+                        class="popup__input">
+            </div>
+            <div class="popup__field">
+                <label class="popup__input__label">Почта</label>
+                <input
+                        type="email"
+                        name="email"
+                        placeholder="@email"
+                        required
+                        class="popup__input">
+            </div>
+            <button type="submit" class="popup__button">Получить консультацию</button>
+        </form>
+    </div>
+    <div class="popup__message">
+        <h2 class="popup__title" style="text-align: center; line-height: 36px">Спасибо,</h2>
+        <p class="popup__title" style="text-align: center; line-height: 36px">ваше обращение отправлено</p>
+        <button class="popup__message__button__close">Закрыть</button>
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
