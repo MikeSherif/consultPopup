@@ -188,3 +188,21 @@ h1, h2, h3, h4, h5, h6, p, button, ul, li, ol {
     padding: 0;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+    .need-consult-popup {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .need-consult-popup {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .need-consult-popup {
+        width: 100%;
+    }
+}
