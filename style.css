@@ -205,4 +205,17 @@ h1, h2, h3, h4, h5, h6, p, button, ul, li, ol {
     .need-consult-popup {
         width: 100%;
     }
+
+    .popup__content {
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .popup__title {
+        font-size: 24px;
+    }
+
+    .popup__description {
+        font-size: 16px;
+    }
 }
