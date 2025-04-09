@@ -203,6 +203,8 @@ h1, h2, h3, h4, h5, h6, p, button, ul, li, ol {
 
 @media screen and (max-width: 768px) {
     .need-consult-popup {
+        position: relative;
+        margin-top: -25px;
         width: 100%;
     }
 
