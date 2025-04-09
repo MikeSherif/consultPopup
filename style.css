@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6, p, button, ul, li, ol {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .need-consult-popup {
         width: 50%;
     }
