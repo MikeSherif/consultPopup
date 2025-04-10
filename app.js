@@ -83,8 +83,8 @@ const centerPopup = () => {
 };
 // Функция открытия попапа
 const openPopup = () => {
-    popupConsult.style.display = "block";
-    popupOverlay.style.display = "block";
+    popupConsult.classList.add("popup__active");
+    popupOverlay.classList.add("popup__active");
     body.style.overflow = "hidden";
     body.style.overflow = "hidden"; // Блокировка прокрутки фона
     body.style.backdropFilter = "blur(5px)"; // Размытие фона
@@ -99,8 +99,8 @@ const openPopup = () => {
 
 // Функция закрытия попапа
 const closePopup = () => {
-    popupConsult.style.display = "none";
-    popupOverlay.style.display = "none";
+    popupConsult.classList.remove("popup__active");
+    popupOverlay.classList.remove("popup__active");
     body.style.overflow = ""; // Разблокировка прокрутки фона
     body.style.backdropFilter = ""; // Удаление размытия фона
     popupOverlay.removeEventListener("click", closePopup);

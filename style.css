@@ -28,10 +28,10 @@ h1, h2, h3, h4, h5, h6, p, button, ul, li, ol {
     color: #2B3888;
     background: rgb(214, 214, 214);
     border: 2px solid #2B3888;
+    transition: all 0.2s ease-in-out;
 }
 
 .popup-overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,10 +39,12 @@ h1, h2, h3, h4, h5, h6, p, button, ul, li, ol {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
     z-index: 999; /* Должен быть ниже, чем у попапа */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
 .need-consult-popup {
-    display: none;
     width: 30%;
     height: fit-content;
     background: #FFFFFF;
@@ -52,6 +54,14 @@ h1, h2, h3, h4, h5, h6, p, button, ul, li, ol {
     transform: translate(-50%, -50%);
     z-index: 1000; /* Указываем высокий z-index для отображения поверх остальных элементов */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Добавляем тень для эффекта */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.popup__active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .popup__content {
